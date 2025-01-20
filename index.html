@@ -1,12 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/style.css">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="styles/fonts.css" />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+
+    <link rel="shortcut icon" href="images/favicon.2.svg" type="image/x-icon" />
+    <title>Designo</title>
+  </head>
+  <body>
+    <header class="header container">
+      <a href="#">
+        <img src="images/logo.desingo.svg" alt="Company logo" width="196" />
+      </a>
+      <div class="header-links">
+        <a href="web.html">WEB DESIGN</a>
+        <a href="#">LOCATIONS</a>
+        <a href="#">CONTACT</a>
+      </div>
+    </header>
+    <main class="main">
+      <div class="hero container">
+        <div class="hero-desc">
+          <h1 class="hero-title">
+            Award-winning custom designs and digital branding solutions
+          </h1>
+          <p>
+            With over 10 years in the industry, we are experienced in creating
+            fully responsive websites, app design, and engaging brand
+            experiences. Find out more about our services.
+          </p>
+          <button>Learn More</button>
+        </div>
+        <div class="hero-img">
+          <picture>
+            <source media="(min-width: 768px)" srcset="images/hero-1img.png" >
+            <source media="(min-width: 576px)" srcset="images/hero-img-tablet.png">
+            <img src="images/hero-img-phone.png" alt="this image phone" width="284" >
+          </picture>
+        </div>
+      </div>
+    </main>
+  </body>
 </html>

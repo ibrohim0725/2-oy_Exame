@@ -1,0 +1,120 @@
+:root {
+    --peach: #E7816B;
+    --black: #1D1C1E;
+    --white: #FFFFFF;
+    --light-peach: #FFAD98;
+    --dark-gray: #333136;
+    --light-gray: #F1F3F5;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Jost', sans-serif;
+}
+
+.container {
+    max-width: 1111px;
+    width: 100%;
+    margin: 64px auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-links {
+    display: flex;
+    align-items: center;
+    gap: 42px;
+
+}
+
+.header-links a {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 2px;
+    color: var(--dark-gray);
+    transition: all 0.5s;
+    cursor: pointer;
+
+}
+
+.header-links a:hover {
+    border-bottom: 1px solid #000000;
+}
+
+.hero {
+    display: flex;
+    align-items: end;
+    flex-wrap: wrap;
+    gap: 96px;
+    background-color: var(--peach);
+    border-radius: 15px;
+
+    background-image: url(../images/hero-backg.png);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.hero-desc {
+    width: 540px;
+    margin-top: 145px;
+    margin-left: 85px;
+}
+
+.hero-title {
+    color: var(--white);
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 48px;
+    margin-bottom: 11px;
+
+}
+
+.hero-desc p {
+    color: var(--white);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    margin-bottom: 40px;
+
+}
+
+.hero button {
+    padding-top: 18px;
+    padding-left: 24px;
+    padding-right: 25px;
+    padding-bottom: 16px;
+    margin-bottom: 161px;
+    border-radius: 8px;
+    border: none;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 21.68px;
+    color: var(--dark-gray);
+    background-color: var(--white);
+    transition: all 0.5s;
+
+}
+
+.hero button:hover {
+    background-color: var(--light-peach);
+    color: var(--white);
+}
+
+.hero-img picture {
+    
+
+    box-shadow: 20px -40px 80px 0px #5D02027F;
+
+}
