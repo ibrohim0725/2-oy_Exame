@@ -17,13 +17,20 @@
         <img src="images/logo.desingo.svg" alt="Company logo" width="196" />
       </a>
       <div class="header-links">
-        <a href="web.html">WEB DESIGN</a>
-        <a href="#">LOCATIONS</a>
-        <a href="#">CONTACT</a>
+        <div class="dropdown">
+          <div class="dropbtn">
+            <img src="images/bar5.svg" alt="" />
+          </div>
+          <div class="dropdown-content">
+            <a href="web.html">WEB DESIGN</a>
+            <a href="#">LOCATIONS</a>
+            <a href="#">CONTACT</a>
+          </div>
+        </div>
       </div>
     </header>
-    <main class="main">
-      <div class="hero container">
+    <main class="main container">
+      <div class="hero">
         <div class="hero-desc">
           <h1 class="hero-title">
             Award-winning custom designs and digital branding solutions
@@ -37,10 +44,35 @@
         </div>
         <div class="hero-img">
           <picture>
-            <source media="(min-width: 768px)" srcset="images/hero-1img.png" >
-            <source media="(min-width: 576px)" srcset="images/hero-img-tablet.png">
-            <img src="images/hero-img-phone.png" alt="this image phone" width="284" >
+            <source media="(min-width: 576px)" srcset="images/hero-1img.png" />
+            <source
+              media="(min-width: 576px)"
+              srcset="images/hero-img-tablet.png"
+            />
+            <img
+              src="images/hero-img-phone.png"
+              alt="this image phone"
+              width="284"
+            />
           </picture>
+        </div>
+      </div>
+      <img src="images/body.bcg.png" alt="" class="body-image" width="1006" />
+      <div class="main-servis">
+        <div class="web-design design-card">
+          <h2>WEB DESIGN</h2>
+          <p>VIEW PROJECTS</p>
+          
+        </div>
+
+        <div class="app-design design-card">
+          <h2>APP DESIGN</h2>
+          <p>VIEW PROJECTS</p>
+        </div>
+
+        <div class="graphig-design design-card">
+          <h2>GRAPHIG DESIGN</h2>
+          <p>VIEW PROJECTS</p>
         </div>
       </div>
     </main>
