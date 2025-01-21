@@ -140,10 +140,9 @@ body {
     grid-template-rows: auto auto auto;
     column-gap: 30px;
     row-gap: 24px;
-    background-image: url(../images/body.bcg.png);
-    background-repeat: no-repeat;
+    position: relative;
     z-index: 3;
-    position: absolute;
+
 }
 
 
@@ -212,24 +211,186 @@ body {
     padding: 21px;
 }
 
-.design-card:hover {
-
-    background: ;
-    opacity: 0, 3;
-}
-
 .design-card {
     cursor: pointer;
+    position: relative;
+    transition: all 0.5s;
 }
 
-
+.design-card:hover::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--peach);
+    opacity: 0.5;
+}
 
 .body-image {
     position: absolute;
     top: 475px;
     right: 450px;
+    z-index: 1;
 }
 
+.content-card {
+    position: relative;
+    z-index: 4;
+}
+
+.content-wrapper {
+    margin-top: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: -250px;
+    padding-bottom: 500px;
+    position: relative;
+    z-index: 2;
+
+
+}
+
+.content-card {
+    text-align: center;
+
+}
+
+.content-title {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 5px;
+    text-align: center;
+    color: var(--dark-gray);
+    margin-top: 48px;
+    margin-bottom: 32px;
+
+}
+
+.content-desc {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    color: var(--dark-gray);
+    width: 350px;
+
+}
+
+.main-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: var(--peach);
+    padding: 72px 95px;
+    width: 100%;
+    background-image: url(../images/main-bottom-bacg.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+    border-radius: 15px;
+    margin-top: 160px;
+    position: absolute;
+    z-index: 2;
+    bottom: 100px;
+    right: 10px;
+}
+
+.main-bottom-title {
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 40px;
+    text-align: left;
+    color: var(--white);
+    width: 269px;
+    margin-bottom: 5px;
+
+}
+
+.main-bottom p {
+    color: var(--white);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: left;
+    width: 450px;
+
+
+}
+
+.bottom-button {
+    padding: 17px 19px;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 21.68px;
+    color: var(--dark-gray);
+    background-color: var(--white);
+    border: none;
+    border-radius: 8px;
+    transition: all 0.5s;
+
+}
+
+.bottom-button:hover {
+    background-color: var(--light-peach);
+    color: var(--white);
+}
+
+.footer {
+    background-color: var(--black);
+    margin-bottom: -64px;
+    position: relative;
+    z-index: 1;
+}
+
+.footer-container {
+    padding-top: 144px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--white);
+    padding-bottom: 40px;
+    opacity: 50%;
+
+
+}
+
+.footer-content a {
+    color: var(--white);
+}
+
+.footer-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-bottom p {
+    opacity: 50%;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    color: var(--white);
+
+
+}
+
+.icons {
+    margin-top: 48px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.bottom-image {
+    position: absolute;
+    margin-left: 269px;
+    margin-top: 200px;
+    margin-bottom: -200px;
+
+    z-index: 1;
+
+}
 
 
 
@@ -280,6 +441,35 @@ body {
         gap: 15px;
     }
 
+    .content-wrapper {
+        display: block;
+
+    }
+
+    .content-card {
+        display: flex;
+        align-items: center;
+        gap: 42px;
+        text-align: left;
+        margin-top: 32px;
+
+    }
+
+    .content-title {
+        text-align: left;
+        margin-top: 0px;
+        margin-bottom: 16px;
+        width: 439px;
+    }
+
+    .body-image {
+        display: none;
+    }
+
+    .bottom-image {
+        display: none;
+    }
+
 
 }
 
@@ -321,6 +511,49 @@ body {
 
 
     }
+
+    .main-bottom {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        background-size: cover;
+
+    }
+
+    .main-bottom-title {
+        text-align: center;
+
+        margin-bottom: 10px;
+        margin-left: 50px;
+
+    }
+
+    .main-bottom p {
+        text-align: center;
+        width: 450px;
+        margin-bottom: 32px;
+    }
+
+    .footer-bottom {
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+
+
+    }
+
+    .footer-desc {
+        width: 300px;
+    }
+
+    .icons {
+        margin-left: 50px;
+        text-align: center;
+        width: 80%;
+    }
+
 }
 
 @media screen and (max-width:576px) {
@@ -329,8 +562,8 @@ body {
     }
 
     .container {
-        padding-right: 0;
-        padding-left: 0;
+        margin-right: 1px;
+
     }
 
     .hero {
@@ -361,7 +594,7 @@ body {
     }
 
     .dropbtn {
-        color: white;
+        color: black;
         border: none;
         cursor: pointer;
         display: block;
@@ -380,10 +613,11 @@ body {
         box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
         z-index: 1;
         right: 0;
+        transition: all 0.5s;
     }
 
     .dropdown-content a {
-        color: black;
+        color: rgb(218, 198, 198);
         padding: 12px 16px;
         text-decoration: none;
         display: block;
@@ -395,7 +629,9 @@ body {
     }
 
     .dropdown:hover .dropdown-content {
+        z-index: 5;
         display: block;
+        background-color: #fff;
     }
 
     .web-design {
@@ -447,12 +683,43 @@ body {
     }
 
     .design-card p {
-       
+
         font-size: 15px;
         font-weight: 500;
         line-height: 21.68px;
         letter-spacing: 5px;
-        
-
     }
+
+    .design-card {
+        margin-left: 20px;
+    }
+
+    .main-bottom p {
+        width: 350px;
+    }
+
+    .content-card {
+        display: block;
+        text-align: center;
+    }
+
+    .content-title {
+        text-align: center;
+        width: 200px;
+        margin-top: 42px;
+        margin-bottom: 32px;
+        margin-left: 100px;
+    }
+
+    .content-desc {
+        text-align: center;
+        margin-left: 50px;
+        width: 327px;
+    }
+
+    .content-wrapper {
+        text-align: center;
+    }
+
+    .footer {}
 }
