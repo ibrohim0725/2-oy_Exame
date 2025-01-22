@@ -466,7 +466,9 @@ body {
     }
 
     .dropdown:hover .dropdown-content {
+        z-index: 5;
         display: block;
+        background-color: #fff;
     }
 
     .hero-container {
@@ -527,7 +529,9 @@ body {
 
 
     }
-
+    .footer-container{
+        width: 90%;
+    }
     .block p {
         width: 90%;
         font-size: 15px;
