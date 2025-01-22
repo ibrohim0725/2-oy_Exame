@@ -228,7 +228,7 @@ body {
 
 .body-image {
     position: absolute;
-    top: 475px;
+    top: -300px;
     right: 450px;
     z-index: 1;
 }
@@ -560,13 +560,8 @@ body {
     .header {
         width: 90%;
     }
-
-    .container {
-        margin-right: 1px;
-
-    }
-
     .hero {
+        width: 100%;
         border-radius: 0;
         background-position: left;
 
@@ -633,6 +628,10 @@ body {
         display: block;
         background-color: #fff;
     }
+    .main-servis{
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+    }
 
     .web-design {
         height: 200px;
@@ -643,6 +642,7 @@ body {
         margin-bottom: 24px;
         align-content: center;
         display: grid;
+        grid-column: span 1;
         justify-content: center;
     }
 
@@ -654,6 +654,7 @@ body {
         background-repeat: no-repeat;
         align-content: center;
         display: grid;
+        grid-column: span 1;
         justify-content: center;
 
     }
@@ -667,6 +668,7 @@ body {
         margin-top: 24px;
         align-content: center;
         display: grid;
+        grid-column: span 1;
         justify-content: center;
 
 
