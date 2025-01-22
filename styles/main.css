@@ -5,6 +5,7 @@
     --light-peach: #FFAD98;
     --dark-gray: #333136;
     --light-gray: #F1F3F5;
+    --lightp: #FDF3F0;
 
 }
 
@@ -22,7 +23,7 @@ body {
     max-width: 1111px;
     width: 100%;
     margin: 64px auto;
-    position: relative;
+    position: relative; 
     z-index: 3;
 }
 
@@ -53,7 +54,8 @@ body {
 .dropbtn img {
     display: none;
 }
-.dropdown-content{
+
+.dropdown-content {
     display: flex;
     align-items: center;
     gap: 32px;
@@ -81,34 +83,143 @@ body {
 }
 
 .hero-container p {
-   color: var(--white);
+    color: var(--white);
     font-size: 16px;
     font-weight: 400;
     line-height: 26px;
 
 }
+
 .body-image {
     position: absolute;
     top: -200px;
     right: 450px;
-    z-index: 1;
+   
+}
+
+.block {
+    position: absolute;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 100px;
+   
+}
+
+.card-wrapper {
+    margin-top: -10px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--lightp);
+    padding: 32px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    transition: all 0.5s;
+}
+
+.card {
+    margin-top: 32px;
+}
+
+.card-wrapper:hover {
+    background-color: var(--peach);
+    color: var(--white);
+}
+
+.card-wrapper:hover p {
+    color: var(--white);
+}
+
+.card-wrapper:hover h2 {
+    color: var(--white);
+}
+
+.card-wrapper h2 {
+    color: var(--peach);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 5px;
+    text-align: center;
+    margin-bottom: 16px;
+
+}
+
+.card-wrapper p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: center;
+    color: #333136;
+
+}
+
+.card img {
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+.servis-block{
+  position: absolute;
+  top: 1200px;
+    
 }
 
 
 
-
 @media screen and (max-width:1111px) {
-    .header{
+    .header {
         width: 97%;
     }
-    .hero-container{
+
+    .hero-container {
         width: 97%;
+    }
+
+    .body-image {
+        display: none;
+    }
+
+    .block {
+        margin-right: 15px;
+    }
+
+    .card {
+        width: 330px;
     }
 }
 
 @media screen and (max-width:992px) {}
 
-@media screen and (max-width:768px) {}
+@media screen and (max-width:768px) {
+    .block {
+        display: block;
+    }
+
+    .card {
+        display: flex;
+        align-items: center;
+        height: 290px;
+        margin-top: 50px;
+    }
+
+    .card-wrapper {
+        border-top-right-radius: 15px;
+        border-bottom-left-radius: 0;
+        text-align: center;
+        padding: 100px 42px;
+
+    }
+
+    .card-wrapper p {
+        width: 200px;
+    }
+
+}
 
 @media screen and (max-width:576px) {
     .dropbtn img {
@@ -153,7 +264,8 @@ body {
     .dropdown:hover .dropdown-content {
         display: block;
     }
-    .hero-container{
+
+    .hero-container {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -162,6 +274,21 @@ body {
         padding: 0;
         width: 100%;
         border-radius: 0;
+    }
+    .card{
+        display: block;
+        height: 158px;
+        padding: 0;
+    }
+    .block{
+        display: flex;
+        gap: 320px;
+        margin-top: 100px;
+        margin-left: 20px; 
+    }
+    .card-wrapper{
+        padding: 32px 29px;
+        
     }
 
 }
