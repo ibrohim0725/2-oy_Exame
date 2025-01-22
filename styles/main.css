@@ -217,6 +217,7 @@ body {
     padding: 21px;
 
 }
+
 .main-bottom {
     display: flex;
     align-items: center;
@@ -377,12 +378,13 @@ body {
     .servis-block {
         display: flex;
         flex-wrap: wrap;
-       
+
     }
+
     .main-bottom {
         display: flex;
         flex-wrap: wrap;
-        justify-content: center; 
+        justify-content: center;
         text-align: center;
         align-items: center;
         background-size: cover;
@@ -393,7 +395,7 @@ body {
         text-align: center;
         width: 90%;
         margin-bottom: 10px;
-        
+
 
     }
 
@@ -410,9 +412,11 @@ body {
 
 
     }
-    .footer-container{
+
+    .footer-container {
         width: 94%;
     }
+
     .footer-desc {
         width: 300px;
     }
@@ -506,42 +510,56 @@ body {
     }
 
     .block1 {
+        text-align: center;
         background-image: url(../images/app-phone.png);
         background-size: cover;
         width: 95%;
         border-radius: 15px;
-        margin-left: 15px;
+        margin-left: 10px;
     }
 
     .block2 {
+        text-align: center;
         background-image: url(../images/graphig-phone.jpg);
         background-size: cover;
         border-radius: 15px;
-        margin-left: 15px;
+        margin-left: 10px;
         width: 95%;
     }
 
-    .block h2 {
+    .block1 h2 {
         font-size: 28px;
-        font-weight: 500;
         line-height: 46px;
         text-align: center;
+        margin-left: 0;
 
 
     }
-    .footer-container{
+
+    .block2 h2 {
+        font-size: 28px;
+        line-height: 46px;
+        text-align: center;
+        margin-left: 0;
+        width: 90%;
+
+    }
+
+    .footer-container {
         width: 90%;
     }
-    .block p {
+
+    .block1 p {
         width: 90%;
         font-size: 15px;
-        font-weight: 500;
+       
         line-height: 21.68px;
     }
-    .main-bottom{
+
+    .main-bottom {
         position: relative;
         margin-top: -400px;
-       bottom: -200px;
+        bottom: -200px;
     }
 
 }
