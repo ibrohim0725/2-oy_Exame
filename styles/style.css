@@ -705,16 +705,20 @@ body {
 
     .content-title {
         text-align: center;
-        width: 200px;
+      width: 90%;
         margin-top: 42px;
         margin-bottom: 32px;
-        margin-left: 100px;
+        
     }
 
     .content-desc {
         text-align: center;
-        margin-left: 50px;
+    
         width: 327px;
+        margin-bottom: ;
+    }
+    .content-desc:last-child{
+        margin-bottom: 121px;
     }
 
     .content-wrapper {
